@@ -659,7 +659,7 @@
                 <div class="col-lg-6 hero-image fade-in">
                     <div class="profile-card floating">
                         <div class="profile-icon" id="profileIcon">
-                            <img src="" alt="Muhammad Ibrahim" class="profile-photo" id="profilePhoto">
+                            <img src="fotobaim.png" alt="profile-icon" class="profile-photo" id="profilePhoto">
                             <i class="las la-user-graduate"></i>
                         </div>
                         
@@ -749,9 +749,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     
     <script>
-        // Profile Photo Upload Handler
-        const profileIcon = document.getElementById('profileIcon');
-        const profilePhoto = document.getElementById('profilePhoto');
+        
+        
         
         // Check if photo exists in localStorage
         const savedPhoto = localStorage.getItem('profilePhoto');
@@ -764,8 +763,7 @@
         // Click to upload photo
         profileIcon.addEventListener('click', function() {
             const input = document.createElement('input');
-            input.type = 'file';
-            input.accept = 'image/*';
+           
             
             input.onchange = function(e) {
                 const file = e.target.files[0];
